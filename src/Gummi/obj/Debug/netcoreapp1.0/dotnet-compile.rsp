@@ -197,6 +197,8 @@
 --resource:"C:\Users\Green\Desktop\Gummi\src\Gummi\obj\Debug\netcoreapp1.0\Gummidotnet-compile.deps.json",Gummi.deps.json
 C:\Users\Green\Desktop\Gummi\src\Gummi\Program.cs
 C:\Users\Green\Desktop\Gummi\src\Gummi\Startup.cs
+C:\Users\Green\Desktop\Gummi\src\Gummi\Controllers\HomeController.cs
+C:\Users\Green\Desktop\Gummi\src\Gummi\Controllers\ProductsController.cs
 C:\Users\Green\Desktop\Gummi\src\Gummi\Migrations\20170421163316_Initial.cs
 C:\Users\Green\Desktop\Gummi\src\Gummi\Migrations\20170421163316_Initial.Designer.cs
 C:\Users\Green\Desktop\Gummi\src\Gummi\Migrations\GummiDbContextModelSnapshot.cs
