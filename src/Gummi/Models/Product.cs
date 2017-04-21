@@ -15,6 +15,7 @@ namespace Gummi.Models
         public string Name { get; set; }
         public string Cost { get; set; }
         public string Origin { get; set; }
+       
         
     }
 }

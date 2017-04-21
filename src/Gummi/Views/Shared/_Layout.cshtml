@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/css/StyleSheet.css" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand">@Html.ActionLink("Gummi-Town", "Index", "Home")</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li>@Html.ActionLink("View Gummi List", "Index", "Products")</li>
+                <li>@Html.ActionLink("Create Gummi", "Create", "Products")</li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div>
+        <div class="container">
+        @RenderBody()
+             </div>
+    </div>
+</body>
+</html>
+    

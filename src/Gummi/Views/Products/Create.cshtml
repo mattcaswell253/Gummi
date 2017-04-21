@@ -1,4 +1,10 @@
-﻿@model Gummi.Models.Product
+﻿@{
+    ViewData["Title"] = "Gummi";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@model Gummi.Models.Product
 
 <h2> Create a New Gummi</h2>
 
@@ -6,17 +12,18 @@
 
 @using (Html.BeginForm())
 {
-    @Html.LabelFor(model => model.Name)
-    @Html.EditorFor(model => model.Name)
+    <div class="product-info">
+        @Html.LabelFor(model => model.Name)
+        @Html.EditorFor(model => model.Name)
 
-    @Html.LabelFor(model => model.Origin)
-    @Html.EditorFor(model => model.Origin)
+        @Html.LabelFor(model => model.Origin)
+        @Html.EditorFor(model => model.Origin)
 
-    @Html.LabelFor(model => model.Cost)
-    @Html.EditorFor(model => model.Cost)
+        @Html.LabelFor(model => model.Cost)
+        @Html.EditorFor(model => model.Cost)
 
-    <input type="submit" value="Create" class="btn btn-default" />
-
+        <input type="submit" value="Create" class="btn btn-default" />
+    </div>
 }
 
 @Html.ActionLink("Back to Product List", "Index")

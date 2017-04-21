@@ -1,19 +1,36 @@
-﻿@model IEnumerable<Gummi.Models.Product>
+﻿@{
+    ViewData["Title"] = "Gummi";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@model IEnumerable<Gummi.Models.Product>
 
 <html>
 <head>
     <title>Gummi</title>
 </head>
 <body>
+    
     <h2>List of Gummi's</h2>
     <h4>@Html.DisplayNameFor(model => model.Name)</h4>
-
-    <ul>
-        @foreach (var listGummi in Model)
-        {
-            <li>@Html.DisplayFor(modelItem => listGummi.Name) | @Html.ActionLink("Details", "Details", new { id = listGummi.ProductId })| @Html.ActionLink("Edit", "Edit", new { id = listGummi.ProductId }) | @Html.ActionLink("Delete", "Delete", new { id = listGummi.ProductId })</li>
+    <section class="products">
+        
           
-        }
-    </ul>
+                
+        
+            @foreach (var listGummi in Model)
+
+            {
+                <div class="product-info product-image">
+        <img src="https://cdn.albanesecandy.com/images/footer-bear.png">@Html.DisplayFor(modelItem => listGummi.Name) | @Html.ActionLink("Details", "Details", new { id = listGummi.ProductId })| @Html.ActionLink("Edit", "Edit", new { id = listGummi.ProductId }) | @Html.ActionLink("Delete", "Delete", new { id = listGummi.ProductId })</div>
+               
+                
+                
+
+
+            }     
+    </section>
+
 </body>
 </html>

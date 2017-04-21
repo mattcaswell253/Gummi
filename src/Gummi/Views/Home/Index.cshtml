@@ -1,11 +1,17 @@
-﻿<html>
+﻿@{
+    ViewData["Title"] = "Gummi";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html>
 <head>
     <title>Gummi</title>
 </head>
 <body>
     <h2>Welcome To Gummi Town</h2>
-
-    <p>@Html.ActionLink("View Gummi List", "Index", "Products")</p>
-    <p>@Html.ActionLink("Add new item", "Create", "Products")</p>
+   <div class="product-info">
+       <h3>This is the Gummi-Town Official Web page where you can create your very own special Gummi's!! with a Origin Location, Name and cost of Gummi!</h3>
+   </div>
+    
 </body>
 </html>

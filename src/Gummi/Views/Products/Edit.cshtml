@@ -1,5 +1,10 @@
-﻿@model Gummi.Models.Product
+﻿@{
+    ViewData["Title"] = "Gummi";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
 
+@model Gummi.Models.Product
+<div class="product-info">
 <h2>Edit</h2>
 <hr />
 <h3>Edit Gummi: @Html.DisplayFor(model => model.Name)</h3>
@@ -18,4 +23,5 @@
 
     <input type="submit" value="Save" class="btn btn-default" />
 }
+    </div>
 @Html.ActionLink("Back to List", "Index")
