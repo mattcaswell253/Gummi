@@ -1,0 +1,21 @@
+﻿@model Gummi.Models.Product
+
+<h2>Edit</h2>
+<hr />
+<h3>Edit Gummi: @Html.DisplayFor(model => model.Name)</h3>
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(model => model.ProductId)
+
+    @Html.LabelFor(model => model.Name)
+    @Html.EditorFor(model => model.Name)
+
+    @Html.LabelFor(model => model.Origin)
+    @Html.EditorFor(model => model.Origin)
+
+    @Html.LabelFor(model => model.Cost)
+    @Html.EditorFor(model => model.Cost)
+
+    <input type="submit" value="Save" class="btn btn-default" />
+}
+@Html.ActionLink("Back to List", "Index")

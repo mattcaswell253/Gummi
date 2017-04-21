@@ -1,0 +1,22 @@
+﻿@ Gummi.Models.Product
+
+<h2> Create a New Gummi</h2>
+
+<hr />
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.Name)
+    @Html.EditorFor(model => model.Name)
+
+    @Html.LabelFor(model => model.Origin)
+    @Html.EditorFor(model => model.Origin)
+
+    @Html.LabelFor(model => model.Cost)
+    @Html.EditorFor(model => model.Cost)
+
+    <input type="submit" value="Create" class="btn btn-default" />
+
+}
+
+@Html.ActionLink("Back to Product List", "Index")

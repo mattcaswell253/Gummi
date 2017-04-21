@@ -1,0 +1,13 @@
+﻿@model Gummi.Models.Product
+
+<h2>Are You Sure you want to delete this Gummi?</h2>
+
+<hr />
+@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)
+@Html.DisplayNameFor(model => model.Origin): @Html.DisplayFor(model => model.Origin)
+@Html.DisplayNameFor(model => model.Cost): @Html.DisplayFor(model => model.Cost)
+@using (Html.BeginForm())
+{
+    <input type="submit" value="Delete" />
+}
+<p>@Html.ActionLink("Back to Gummi list", "Index")</p>

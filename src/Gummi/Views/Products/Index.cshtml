@@ -11,7 +11,7 @@
     <ul>
         @foreach (var listGummi in Model)
         {
-            <li>@Html.DisplayFor(modelItem => listGummi.Name) | @Html.ActionLink("Details", "Details", new { id = listGummi.ProductId })</li>
+            <li>@Html.DisplayFor(modelItem => listGummi.Name) | @Html.ActionLink("Details", "Details", new { id = listGummi.ProductId })| @Html.ActionLink("Edit", "Edit", new { id = listGummi.ProductId }) | @Html.ActionLink("Delete", "Delete", new { id = listGummi.ProductId })</li>
           
         }
     </ul>
